@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run serve:single-spa:micro-angular",
-    "build": "npm run build:single-spa:micro-angular",
+    "build": "npm run build:single-spa-aux:micro-angular",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build:single-spa-aux:micro-angular": "ng build micro-angular --prod",
     "build:single-spa:micro-angular": "ng build micro-angular --prod --deploy-url http://localhost:4300/",
     "serve:single-spa:micro-angular": "ng s --project micro-angular --disable-host-check --port 4300 --deploy-url http://localhost:4300/ --live-reload false"
   },
